@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>laboratorio1</title>
+    <link rel="stylesheet" href="css/site.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="img">
+            <img id="avatar" src=""></img>
+        </div>
+        <div class="input-data">
+            <label for="name">Name</label>
+            <input type="text" name="Name" id="name" placeholder="Name" class="name-input">
+            <label for="lastname">Last name</label>
+            <input type="text" name="LastName" id="lastname" placeholder="Last Name" class="lastname-input">
+        </div>
+        <div class="mi-boton">
+            <button type="button" onclick="console.log(document.getElementById('lastname').value)">Update</button>
+            <button type="button" onclick="window.alert(document.getElementById('name').value + ' ' + document.getElementById('lastname').value + ' quiere saludarte!')">
+            Send
+        </button>
+        </div>
+    </div>
+    <script src="js/demo.js"></script>
+</body>
+
+</html>
