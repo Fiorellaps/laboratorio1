@@ -25,6 +25,7 @@ body {
     height: 200px;
     width: 200px;
     max-width: 200px;
+    border-radius: 3px;
 }
 
 .stars span {

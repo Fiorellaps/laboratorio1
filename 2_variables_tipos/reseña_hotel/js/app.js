@@ -8,10 +8,10 @@
 */
 
 var hoteles = {
-    Mencey: {
-        name: "Mencey",
-        location: "Tenerife",
-        img: "https://media-cdn.tripadvisor.com/media/photo-m/1280/17/2f/e9/d7/iberostar-grand-mencey.jpg",
+    Miramar: {
+        name: "Miramar",
+        location: "Granada",
+        img: "img/hotel2.png",
         puntuacion: "",
         anonima: "",
     },
@@ -32,7 +32,7 @@ var estrellas = {
     cinco: "<span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span>",
 }
 
-var nombre = prompt("Introduce el nombre del hotel que quieres puentuar (Mencey o Melia):");
+var nombre = prompt("Introduce el nombre del hotel que quieres puentuar (Miramar o Melia):");
 hoteles[nombre].puntuacion = prompt("Puntua al hotel del uno al cinco (escribe el número):");
 hoteles[nombre].anonima = confirm("¿Quieres que sea anónima?");
 document.getElementById("name-hotel").innerHTML = "Hotel: " + hoteles[nombre].name;
