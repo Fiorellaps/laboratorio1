@@ -36,17 +36,17 @@ for (numero of datos) {
 // Ejercicio 3
 /*
 var datos = [14, 2, 2.02, 63, 0, -9];
-var mayores_cero = [],
-    menores_cero = [];
+var mayoresCero = [],
+    menoresCero = [];
 for (numero of datos) {
     if (numero > 0) {
-        mayores_cero.push(numero);
+        mayoresCero.push(numero);
     } else {
-        menores_cero.push(numero);
+        menoresCero.push(numero);
     }
 }
-console.log(mayores_cero);
-console.log(menores_cero);
+console.log(mayoresCero);
+console.log(menoresCero);
 */
 //Ejercicio 4
 /*
@@ -89,11 +89,11 @@ var personas = [{ id: 1, name: "Jhon", age: 25, }, { id: 2, name: "Doe", age: 8,
     name: "Pedro",
     age: 18,
 }, ];
-var mayores_18 = [],
-    menores_18 = [];
+var mayores18 = [];
 for (persona of personas) {
     if (persona.age >= 18) {
         console.log(persona);
+        //mayores18.push(persona);
     }
 }
 */
@@ -108,17 +108,17 @@ var personas = [{ id: 1, name: "Jhon", age: 25, }, { id: 2, name: "Doe", age: 8,
     name: "Pedro",
     age: 18,
 }, ];
-var mayores_18 = [],
-    menores_18 = [];
+var mayores18 = [],
+    menores18 = [];
 for (persona of personas) {
     if (persona.age >= 18) {
-        mayores_18.push(persona);
+        mayores18.push(persona);
     } else {
-        menores_18.push(persona);
+        menores18.push(persona);
     }
 }
-console.log(mayores_18);
-console.log(menores_18);
+console.log(mayores18);
+console.log(menores18);
 */
 
 //Ejercicio 8
@@ -171,7 +171,7 @@ function muestraHotel(hotel) {
 */
 
 //Ejercicio 9
-/*
+
 var hoteles = [{
         hoteId: 1,
         hotelName: "Hotel 1",
@@ -203,16 +203,16 @@ var hoteles = [{
         price: 8.10,
     },
 ]
-var hoteles_incremento = [];
+var hotelesIncremento = [];
 for (hotel of hoteles) {
     if (hotel.availableRooms < 10) {
         hotel.price = hotel.price * 1.10;
-        hoteles_incremento.push(hotel);
+        hotelesIncremento.push(hotel);
     };
 }
 
-function muestraHotel(lista_hotel) {
-    for (hotel of lista_hotel) {
+function muestraHotel(listaHotel) {
+    for (hotel of listaHotel) {
         for (property in hotel) {
             console.log(property + ": " + hotel[property]);
 
@@ -221,11 +221,11 @@ function muestraHotel(lista_hotel) {
     };
 };
 
-muestraHotel(hoteles_incremento);
-*/
+muestraHotel(hotelesIncremento);
+
 
 //Ejercicio 10
-
+/*
 var hoteles = [{ hoteId: 1, hotelName: "Hotel 1", availableRooms: 25, price: 10.20, }, {
     hoteId: 2,
     hotelName: "Hotel 2",
@@ -249,20 +249,21 @@ var hoteles = [{ hoteId: 1, hotelName: "Hotel 1", availableRooms: 25, price: 10.
 }, ]
 
 function getHotel() {
-    var hotel_introducido = document.getElementById("textBox").value;
+    var hotelIntroducido = document.getElementById("textBox").value;
     encontrado = false;
     i = 0;
     while (!encontrado && i < hoteles.length) {
-        if (hotel_introducido.toUpperCase() == hoteles[i].hotelName.toUpperCase()) {
+        if (hotelIntroducido.toUpperCase() == hoteles[i].hotelName.toUpperCase()) {
             encontrado = true;
         }
         i++;
     }
 
     if (encontrado) {
-        document.getElementById("result").innerHTML = "El hotel: " + hotel_introducido + " existe :)";
+        document.getElementById("result").innerHTML = "El hotel: " + hotelIntroducido + " existe :)";
     } else {
-        document.getElementById("result").innerHTML = "El hotel: " + hotel_introducido + " NO existe :(";
+        document.getElementById("result").innerHTML = "El hotel: " + hotelIntroducido + " NO existe :(";
     }
 }
 document.getElementById("myButton").addEventListener("click", getHotel);
+*/

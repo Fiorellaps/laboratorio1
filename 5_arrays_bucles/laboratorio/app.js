@@ -80,7 +80,7 @@ function printPurchase(product) {
 //-------- EXTRA -----------
 
 //GASTOS DE ENVIO O NO
-function has_shipping_costs() {
+function hasShippingCosts() {
     encontrado = false
     i = 0;
     while (!encontrado && i < carrito.length) {
@@ -92,11 +92,11 @@ function has_shipping_costs() {
         i++;
     }
 
-    var gastos_envio = encontrado ? "Este pedido tiene gastos de envío" : "Pedido sin gastos de envío";
+    var gastosEnvio = encontrado ? "Este pedido tiene gastos de envío" : "Pedido sin gastos de envío";
 
-    console.log(gastos_envio);
+    console.log(gastosEnvio);
 }
-//has_shipping_costs()
+//hasShippingCosts()
 
 // CARRITO EN LISTADO
 function createList() {
