@@ -62,9 +62,6 @@ const products = [{
 
 // 1. crear html a partir de la lista
 
-
-
-
 var createItemDescription = (description, i) => {
     var itemDescription = document.createElement("span");
     itemDescription.innerHTML = description;
