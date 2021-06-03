@@ -96,7 +96,7 @@ function hasShippingCosts() {
 
     console.log(gastosEnvio);
 }
-//hasShippingCosts()
+hasShippingCosts()
 
 // CARRITO EN LISTADO
 function createList() {
