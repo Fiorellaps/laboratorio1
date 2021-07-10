@@ -19,4 +19,6 @@ var randomPick = (n, min, max) => {
     return arrayNumbers;
 }
 
-console.log(randomPick(10, 1, 10));
+console.log(randomPick(6, 1, 49)); // Apuesta automática de la primitiva
+console.log(randomPick(15, 1, 15));
+console.log(randomPick(1, 1, 6));
