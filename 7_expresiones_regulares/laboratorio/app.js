@@ -52,7 +52,7 @@ for (var i = 0; i < images.length; i++) {
 // ADICIONAL
 
 // EXTRATER IMAGENES  < --> NO LO ENTIENDO
-const pattern10 = /^<img\ssrc="https:\/\/(\w+\.\w+\/)*\w+\.\w+"\s?\/\>$/;
+const pattern10 = /^<img\ssrc=".{1,}\.[a-z]{2,4}"\s?\/>$/;
 
 let txt = 'src="https://github.githubassets.com/logos_page/GitHub-Mark.png"';
 console.log("Regexp matchs with  imga src" + txt, pattern10.test(txt));
