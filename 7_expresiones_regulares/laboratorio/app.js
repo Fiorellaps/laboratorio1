@@ -56,7 +56,7 @@ const pattern10 = /^<img\ssrc=".{1,}\.[a-z]{2,4}"\s?\/>$/;
 
 let txt = 'src="https://github.githubassets.com/logos_page/GitHub-Mark.png"';
 console.log("Regexp matchs with  imga src" + txt, pattern10.test(txt));
-const pattern11 = /^<img\ssrc="https:\/\/(\w+\.\w+\/)*\w+\.\w+"\s?\/\>$/mg;
+const pattern11 = /^<img\ssrc="https:\/\/(\w+\.\w+\/)*\w+\.\w+"\s?\/\>$/img;
 
 // TARJETA DE CREDITO
 
