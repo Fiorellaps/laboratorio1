@@ -117,304 +117,201 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   }
 
   return newRequire;
-})({"src/data-business.js":[function(require,module,exports) {
-"use strict";
+})({"C:/Users/fiore/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/bundle-url.js":[function(require,module,exports) {
+var bundleURL = null;
 
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.getClients = getClients;
-exports.getAccounts = getAccounts;
-
-function getClients() {
-  return [{
-    id: 1,
-    avatar: "https://robohash.org/harumundedeleniti.jpg?size=50x50&set=set1",
-    first_name: "Javier",
-    last_name: "Lamey",
-    email: "jlamey0@discuz.net"
-  }, {
-    id: 2,
-    avatar: "https://robohash.org/fugitvoluptatesenim.png?size=50x50&set=set1",
-    first_name: "Crin",
-    last_name: "Siberry",
-    email: "csiberry1@lycos.com"
-  }, {
-    id: 3,
-    avatar: "https://robohash.org/quodquidemvero.jpg?size=50x50&set=set1",
-    first_name: "Belva",
-    last_name: "Dumbleton",
-    email: "bdumbleton2@bloomberg.com"
-  }, {
-    id: 4,
-    avatar: "https://robohash.org/evenietanimimaxime.jpg?size=50x50&set=set1",
-    first_name: "Natal",
-    last_name: "Achromov",
-    email: "nachromov3@hatena.ne.jp"
-  }, {
-    id: 5,
-    avatar: "https://robohash.org/eositaqueexplicabo.bmp?size=50x50&set=set1",
-    first_name: "Brandy",
-    last_name: "Iwaszkiewicz",
-    email: "biwaszkiewicz4@goodreads.com"
-  }, {
-    id: 6,
-    avatar: "https://robohash.org/veritatisaliasminima.jpg?size=50x50&set=set1",
-    first_name: "Rudolfo",
-    last_name: "Squelch",
-    email: "rsquelch5@stanford.edu"
-  }, {
-    id: 7,
-    avatar: "https://robohash.org/asperioresomnissoluta.bmp?size=50x50&set=set1",
-    first_name: "Aurelie",
-    last_name: "Flye",
-    email: "aflye6@amazon.de"
-  }, {
-    id: 8,
-    avatar: "https://robohash.org/veritatisfacereeligendi.png?size=50x50&set=set1",
-    first_name: "Dollie",
-    last_name: "Durdy",
-    email: "ddurdy7@privacy.gov.au"
-  }, {
-    id: 9,
-    avatar: "https://robohash.org/molestiaeutaliquam.jpg?size=50x50&set=set1",
-    first_name: "Sadie",
-    last_name: "Carsey",
-    email: "scarsey8@free.fr"
-  }, {
-    id: 10,
-    avatar: "https://robohash.org/asperioresdolorsit.png?size=50x50&set=set1",
-    first_name: "Franny",
-    last_name: "Breazeall",
-    email: "fbreazeall9@msu.edu"
-  }];
-}
-
-function getAccounts() {
-  return [{
-    id: 1,
-    clientId: 1,
-    iban: "CZ93 1843 7812 7148 7249 2819",
-    money: "-1345.10"
-  }, {
-    id: 2,
-    clientId: 1,
-    iban: "FR39 8986 1940 69E5 IPIX 74QN G61",
-    money: "-1418.10"
-  }, {
-    id: 3,
-    clientId: 2,
-    iban: "TN31 0683 5990 1113 0051 7844",
-    money: "23109.78"
-  }, {
-    id: 4,
-    clientId: 3,
-    iban: "GB98 UTTC 8356 6258 9439 93",
-    money: "15721.47"
-  }, {
-    id: 5,
-    clientId: 4,
-    iban: "BG17 VAKO 7833 79Q7 HK7H K3",
-    money: "24458.62"
-  }, {
-    id: 6,
-    clientId: 5,
-    iban: "MU93 QUGI 8684 7689 7519 5635 274U LC",
-    money: "23677.60"
-  }, {
-    id: 7,
-    clientId: 5,
-    iban: "FR43 9528 3177 35O3 AC2V 6VNU V38",
-    money: "11117.60"
-  }, {
-    id: 8,
-    clientId: 6,
-    iban: "NL35 BLZT 2522 8993 25",
-    money: "207.32"
-  }, {
-    id: 9,
-    clientId: 7,
-    iban: "AZ25 TSQE CULI 0YGX AJK3 RCHX DSZ2",
-    money: "23980.98"
-  }, {
-    id: 10,
-    clientId: 8,
-    iban: "FR16 3581 3360 133P CCCZ EW3E A20",
-    money: "15230.37"
-  }, {
-    id: 11,
-    clientId: 8,
-    iban: "MK98 081B IAUU CTEF 308",
-    money: "19166.62"
-  }, {
-    id: 12,
-    clientId: 8,
-    iban: "LB91 1234 KKW8 W2EY 972B EXVO YKN0",
-    money: "-2396.78"
-  }, {
-    id: 13,
-    clientId: 9,
-    iban: "BG83 RKKJ 5762 9795 AH74 9Y",
-    money: "11837.06"
-  }, {
-    id: 14,
-    clientId: 9,
-    iban: "HU46 6405 3103 5188 8345 6947 6173",
-    money: "-6081.25"
-  }, {
-    id: 15,
-    clientId: 10,
-    iban: "FR59 2396 3586 44UT 2E5F DQAB P15",
-    money: "24426.40"
-  }];
-} // FORMA 1 CommonJS
-// module.exports = {
-//     getClients,
-//     getAccounts
-// };
-// FORMA 2 ES6
-},{}],"src/style-business.js":[function(require,module,exports) {
-"use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.getNodeStyle = getNodeStyle;
-
-function getNodeStyle(account) {
-  if (account.money < 0) {
-    return "color: red";
+function getBundleURLCached() {
+  if (!bundleURL) {
+    bundleURL = getBundleURL();
   }
 
-  return "color: blue";
-} // FORMA 1 CommonJS
-// module.exports = {
-//     getNodeStyle
-// };
-// FORMA 2 ES6
-},{}],"src/account-business.js":[function(require,module,exports) {
-"use strict";
+  return bundleURL;
+}
 
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.getClientAccountsElement = getClientAccountsElement;
-
-var StyleBusiness = _interopRequireWildcard(require("./style-business"));
-
-function _getRequireWildcardCache(nodeInterop) { if (typeof WeakMap !== "function") return null; var cacheBabelInterop = new WeakMap(); var cacheNodeInterop = new WeakMap(); return (_getRequireWildcardCache = function (nodeInterop) { return nodeInterop ? cacheNodeInterop : cacheBabelInterop; })(nodeInterop); }
-
-function _interopRequireWildcard(obj, nodeInterop) { if (!nodeInterop && obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(nodeInterop); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (key !== "default" && Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
-
-function _createForOfIteratorHelper(o, allowArrayLike) { var it = typeof Symbol !== "undefined" && o[Symbol.iterator] || o["@@iterator"]; if (!it) { if (Array.isArray(o) || (it = _unsupportedIterableToArray(o)) || allowArrayLike && o && typeof o.length === "number") { if (it) o = it; var i = 0; var F = function F() {}; return { s: F, n: function n() { if (i >= o.length) return { done: true }; return { done: false, value: o[i++] }; }, e: function e(_e) { throw _e; }, f: F }; } throw new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); } var normalCompletion = true, didErr = false, err; return { s: function s() { it = it.call(o); }, n: function n() { var step = it.next(); normalCompletion = step.done; return step; }, e: function e(_e2) { didErr = true; err = _e2; }, f: function f() { try { if (!normalCompletion && it.return != null) it.return(); } finally { if (didErr) throw err; } } }; }
-
-function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
-
-function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
-
-function getClientAccountsElement(accounts) {
-  var ul = document.createElement("ul");
-
-  var _iterator = _createForOfIteratorHelper(accounts),
-      _step;
-
+function getBundleURL() {
+  // Attempt to find the URL of the current script and use that as the base URL
   try {
-    for (_iterator.s(); !(_step = _iterator.n()).done;) {
-      var account = _step.value;
-      ul.append(getAccountElement(account));
-    }
+    throw new Error();
   } catch (err) {
-    _iterator.e(err);
-  } finally {
-    _iterator.f();
+    var matches = ('' + err.stack).match(/(https?|file|ftp|chrome-extension|moz-extension):\/\/[^)\n]+/g);
+
+    if (matches) {
+      return getBaseURL(matches[0]);
+    }
   }
 
-  return ul;
+  return '/';
 }
 
-function getAccountElement(account) {
-  var li = document.createElement("li");
-  li.style = StyleBusiness.getNodeStyle(account);
-  li.append("[Saldo: " + account.money + "] IBAN: " + account.iban);
-  return li;
-} // FORMA 1 CommonJS
-// module.exports = {
-//     getClientAccountsElement
-// };
-// FORMA 2 ES6
-},{"./style-business":"src/style-business.js"}],"src/client-business.js":[function(require,module,exports) {
-"use strict";
+function getBaseURL(url) {
+  return ('' + url).replace(/^((?:https?|file|ftp|chrome-extension|moz-extension):\/\/.+)?\/[^/]+(?:\?.*)?$/, '$1') + '/';
+}
 
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.getClientElement = getClientElement;
+exports.getBundleURL = getBundleURLCached;
+exports.getBaseURL = getBaseURL;
+},{}],"C:/Users/fiore/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js":[function(require,module,exports) {
+var bundle = require('./bundle-url');
 
-var AccountBusiness = _interopRequireWildcard(require("./account-business"));
+function updateLink(link) {
+  var newLink = link.cloneNode();
 
-var DataBusiness = _interopRequireWildcard(require("./data-business"));
+  newLink.onload = function () {
+    link.remove();
+  };
 
-function _getRequireWildcardCache(nodeInterop) { if (typeof WeakMap !== "function") return null; var cacheBabelInterop = new WeakMap(); var cacheNodeInterop = new WeakMap(); return (_getRequireWildcardCache = function (nodeInterop) { return nodeInterop ? cacheNodeInterop : cacheBabelInterop; })(nodeInterop); }
+  newLink.href = link.href.split('?')[0] + '?' + Date.now();
+  link.parentNode.insertBefore(newLink, link.nextSibling);
+}
 
-function _interopRequireWildcard(obj, nodeInterop) { if (!nodeInterop && obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(nodeInterop); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (key !== "default" && Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
+var cssTimeout = null;
 
-function _createForOfIteratorHelper(o, allowArrayLike) { var it = typeof Symbol !== "undefined" && o[Symbol.iterator] || o["@@iterator"]; if (!it) { if (Array.isArray(o) || (it = _unsupportedIterableToArray(o)) || allowArrayLike && o && typeof o.length === "number") { if (it) o = it; var i = 0; var F = function F() {}; return { s: F, n: function n() { if (i >= o.length) return { done: true }; return { done: false, value: o[i++] }; }, e: function e(_e) { throw _e; }, f: F }; } throw new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); } var normalCompletion = true, didErr = false, err; return { s: function s() { it = it.call(o); }, n: function n() { var step = it.next(); normalCompletion = step.done; return step; }, e: function e(_e2) { didErr = true; err = _e2; }, f: function f() { try { if (!normalCompletion && it.return != null) it.return(); } finally { if (didErr) throw err; } } }; }
+function reloadCSS() {
+  if (cssTimeout) {
+    return;
+  }
 
-function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+  cssTimeout = setTimeout(function () {
+    var links = document.querySelectorAll('link[rel="stylesheet"]');
 
-function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
-
-function getClientElement(client) {
-  var allAccounts = DataBusiness.getAccounts();
-  var clientAccounts = [];
-
-  var _iterator = _createForOfIteratorHelper(allAccounts),
-      _step;
-
-  try {
-    for (_iterator.s(); !(_step = _iterator.n()).done;) {
-      var account = _step.value;
-
-      if (account.clientId === client.id) {
-        clientAccounts.push(account);
+    for (var i = 0; i < links.length; i++) {
+      if (bundle.getBaseURL(links[i].href) === bundle.getBundleURL()) {
+        updateLink(links[i]);
       }
     }
-  } catch (err) {
-    _iterator.e(err);
-  } finally {
-    _iterator.f();
-  }
 
-  var node = getClientNode(client);
-  var ul = AccountBusiness.getClientAccountsElement(clientAccounts);
-  node.appendChild(ul);
-  return node;
+    cssTimeout = null;
+  }, 50);
 }
 
-function getClientNode(client) {
-  var li = document.createElement("li");
-  li.append(getFullName(client));
-  return li;
-}
+module.exports = reloadCSS;
+},{"./bundle-url":"C:/Users/fiore/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"src/style.css":[function(require,module,exports) {
+var reloadCSS = require('_css_loader');
 
-function getFullName(client) {
-  return client.first_name + " " + client.last_name;
-} // FORMA 1 CommonJS
-// module.exports = {
-//     getClientElement
-// };
-// FORMA 2 ES6
-},{"./account-business":"src/account-business.js","./data-business":"src/data-business.js"}],"src/client-list-business.js":[function(require,module,exports) {
+module.hot.dispose(reloadCSS);
+module.hot.accept(reloadCSS);
+},{"_css_loader":"C:/Users/fiore/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"src/data-business.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.printClientsAccounts = printClientsAccounts;
+exports.getSeasonDeaths = exports.getClientsById = exports.getClients = void 0;
+
+function _createForOfIteratorHelper(o, allowArrayLike) { var it = typeof Symbol !== "undefined" && o[Symbol.iterator] || o["@@iterator"]; if (!it) { if (Array.isArray(o) || (it = _unsupportedIterableToArray(o)) || allowArrayLike && o && typeof o.length === "number") { if (it) o = it; var i = 0; var F = function F() {}; return { s: F, n: function n() { if (i >= o.length) return { done: true }; return { done: false, value: o[i++] }; }, e: function e(_e) { throw _e; }, f: F }; } throw new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); } var normalCompletion = true, didErr = false, err; return { s: function s() { it = it.call(o); }, n: function n() { var step = it.next(); normalCompletion = step.done; return step; }, e: function e(_e2) { didErr = true; err = _e2; }, f: function f() { try { if (!normalCompletion && it.return != null) it.return(); } finally { if (didErr) throw err; } } }; }
+
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
+
+// Obtener datos a URL del servidor
+//import axios from "axios";
+var getClients = function getClients() {
+  return fetch("https://www.breakingbadapi.com/api/characters").then(function (response) {
+    return response.json();
+  });
+};
+
+exports.getClients = getClients;
+
+var getClientsById = function getClientsById(id) {
+  return fetch("https://www.breakingbadapi.com/api/characters/" + id).then(function (response) {
+    return response.json();
+  });
+};
+
+exports.getClientsById = getClientsById;
+
+var getSeasonDeaths = function getSeasonDeaths(season) {
+  var deaths = [];
+  fetch("https://www.breakingbadapi.com/api/deaths?season=" + season).then(function (response) {
+    return response.data;
+  }).then(function (data) {
+    var _iterator = _createForOfIteratorHelper(data),
+        _step;
+
+    try {
+      for (_iterator.s(); !(_step = _iterator.n()).done;) {
+        item = _step.value;
+        deaths.push(data);
+      }
+    } catch (err) {
+      _iterator.e(err);
+    } finally {
+      _iterator.f();
+    }
+
+    ;
+  });
+  return deaths.length;
+};
+
+exports.getSeasonDeaths = getSeasonDeaths;
+},{}],"src/util.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.showCharacter = exports.createCharacterRow = void 0;
+
+var createCharacterRow = function createCharacterRow(character) {
+  var element = document.createElement("div");
+  var avatar = createAvatar(character);
+  element.appendChild(avatar);
+  var link = createRowText(character);
+  element.appendChild(link);
+  element.className = "character-row";
+  return element;
+};
+
+exports.createCharacterRow = createCharacterRow;
+
+var createAvatar = function createAvatar(character) {
+  var element = document.createElement("img");
+  element.width = 150;
+  element.className = "thumbnail";
+  element.src = character.img;
+  return element;
+};
+
+var createRowText = function createRowText(character) {
+  var element = document.createElement("span");
+  element.append(character.name);
+  return element;
+};
+
+var createAvatarDetail = function createAvatarDetail(character) {
+  var element = document.createElement("img");
+  element.width = 350;
+  element.src = character.img;
+  return element;
+};
+
+var showCharacter = function showCharacter(character) {
+  console.log("character", character);
+  var characterDetail = document.getElementById("character-detail");
+  characterDetail.innerHTML = "";
+  characterDetail.appendChild(createAvatarDetail(character));
+  characterDetail.appendChild(createParagraph("Name: " + character.name));
+  characterDetail.appendChild(createParagraph("Birthday: " + character.birthday));
+  characterDetail.appendChild(createParagraph("Nickname: " + character.nickname));
+};
+
+exports.showCharacter = showCharacter;
+
+var createParagraph = function createParagraph(text) {
+  var element = document.createElement("p");
+  element.append(text);
+  return element;
+};
+},{}],"src/index.js":[function(require,module,exports) {
+"use strict";
+
+require("./style.css");
 
 var DataBusiness = _interopRequireWildcard(require("./data-business"));
 
-var ClientBusiness = _interopRequireWildcard(require("./client-business"));
+var Util = _interopRequireWildcard(require("./util"));
 
 function _getRequireWildcardCache(nodeInterop) { if (typeof WeakMap !== "function") return null; var cacheBabelInterop = new WeakMap(); var cacheNodeInterop = new WeakMap(); return (_getRequireWildcardCache = function (nodeInterop) { return nodeInterop ? cacheNodeInterop : cacheBabelInterop; })(nodeInterop); }
 
@@ -426,47 +323,54 @@ function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o =
 
 function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
 
-function printClientsAccounts() {
-  var clients = DataBusiness.getClients();
-  var ul = document.createElement("ul");
-
-  var _iterator = _createForOfIteratorHelper(clients),
+DataBusiness.getClients().then(function (datos) {
+  var _iterator = _createForOfIteratorHelper(datos),
       _step;
 
   try {
+    var _loop = function _loop() {
+      var character = _step.value;
+      var node = Util.createCharacterRow(character);
+
+      node.onclick = function () {
+        console.log(character.char_id);
+        DataBusiness.getClientsById(character.char_id).then(function (dato) {
+          return Util.showCharacter(dato[0]);
+        });
+      };
+
+      document.getElementById("root").append(node);
+
+      var _iterator2 = _createForOfIteratorHelper(character.appearance),
+          _step2;
+
+      try {
+        for (_iterator2.s(); !(_step2 = _iterator2.n()).done;) {
+          var season = _step2.value;
+          span = document.createElement('span');
+          span.innerHTML = "Season: <strong>" + season + " </strong>  --> nº deaths: " + DataBusiness.getSeasonDeaths(season) + " ";
+          console.log(span);
+          document.getElementById("root").appendChild(span);
+        }
+      } catch (err) {
+        _iterator2.e(err);
+      } finally {
+        _iterator2.f();
+      }
+    };
+
     for (_iterator.s(); !(_step = _iterator.n()).done;) {
-      var client = _step.value;
-      var element = ClientBusiness.getClientElement(client);
-      ul.appendChild(element);
+      var span;
+
+      _loop();
     }
   } catch (err) {
     _iterator.e(err);
   } finally {
     _iterator.f();
   }
-
-  document.getElementById("root").appendChild(ul);
-} // FORMA 1 CommonJS
-// module.exports = {
-//     printClientsAccounts
-// };
-// FORMA 2 ES6
-},{"./data-business":"src/data-business.js","./client-business":"src/client-business.js"}],"src/index.js":[function(require,module,exports) {
-"use strict";
-
-var ClientListBusiness = _interopRequireWildcard(require("./client-list-business"));
-
-function _getRequireWildcardCache(nodeInterop) { if (typeof WeakMap !== "function") return null; var cacheBabelInterop = new WeakMap(); var cacheNodeInterop = new WeakMap(); return (_getRequireWildcardCache = function (nodeInterop) { return nodeInterop ? cacheNodeInterop : cacheBabelInterop; })(nodeInterop); }
-
-function _interopRequireWildcard(obj, nodeInterop) { if (!nodeInterop && obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(nodeInterop); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (key !== "default" && Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
-
-// FORMA 1 CommonJS
-// const ClientListBusiness = require("./client-list-business");
-// FORMA 2 ES6
-window.onload = function () {
-  ClientListBusiness.printClientsAccounts();
-};
-},{"./client-list-business":"src/client-list-business.js"}],"C:/Users/fiore/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+});
+},{"./style.css":"src/style.css","./data-business":"src/data-business.js","./util":"src/util.js"}],"C:/Users/fiore/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -494,7 +398,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "51691" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "60856" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
