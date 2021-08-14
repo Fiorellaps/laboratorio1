@@ -105,3 +105,82 @@ const longest = (letter, ...elements) => elements.every(element => element.start
 
 console.log(longest("E", "Enmma", "Epa", "Hola"))
 console.log(longest("E", "Enmma", "Epa", "Eola"))
+
+
+/**
+ * searchInStringV1
+ */
+
+const searchInStringV1 = (given, character) => Array.from(given).reduce((acc, letter) => {
+    if (letter === character) acc++;
+    return acc
+}, 0);
+
+
+console.log(searchInStringV1("haalalala", "a"));
+
+/**
+ * sotCharacters
+ */
+
+const sortCharacters = string => Array.from(string).sort((a, b) => a.localeCompare(b));
+
+console.log(sortCharacters("Hola"))
+
+/**
+ * shout
+ */
+
+const shout = (...palabras) => {
+    return palabras.map(palabra => "¡" + palabra.toUpperCase() + "!").join("");
+}
+
+console.log(shout("No", "Fumes", "En clase"))
+
+
+/**
+ * Lista de la compra
+ */
+
+const shoppingCart = [
+    { category: "Frutas y Verduras", product: "Lechuga", price: 0.8, units: 1 },
+    { category: "Carne y Pescado", product: "Pechuga pollo", price: 3.75, units: 2 },
+    { category: "Droguería", product: "Gel ducha", price: 1.15, units: 1 },
+    { category: "Droguería", product: "Papel cocina", price: 0.9, units: 3 },
+    { category: "Frutas y Verduras", product: "Sandía", price: 4.65, units: 1 },
+    { category: "Frutas y Verduras", product: "Puerro", price: 4.65, units: 2 },
+    { category: "Carne y Pescado", product: "Secreto ibérico", price: 5.75, units: 2 },
+];
+
+// ---- A ---- //
+
+// LISTA ANTERIOR MAS IVA
+const addIVA = lista => lista.map(product => {
+    iva = product.price * 0.21;
+    return { iva, ...product }
+})
+console.log(addIVA(shoppingCart))
+
+// LISTA DE IVA SOLO
+const addIVA2 = lista => lista.map(product => product.price * 0.21)
+console.log(addIVA2(shoppingCart))
+
+// ---- B ---- //
+
+const sortUnits = lista => lista.sort((productA, productB) => productA.units < productB.units ? 1 : -1)
+console.log(sortUnits(shoppingCart))
+
+// ---- C ---- //
+
+const subtotalDrogueria = lista => lista.reduce((subtotal, producto) => {
+    if (producto.category === "Droguería") subtotal += producto.price * producto.units;
+    return subtotal;
+}, 0)
+
+console.log(subtotalDrogueria(shoppingCart));
+
+// ---- D ---- //
+shoppingCartTotal = addIVA(shoppingCart)
+shoppingCartTotal.sort((a, b) => a.category.localeCompare(b.category)).forEach(producto => {
+    console.log(producto.product, "-> ", producto.price + producto.iva, " €")
+})
