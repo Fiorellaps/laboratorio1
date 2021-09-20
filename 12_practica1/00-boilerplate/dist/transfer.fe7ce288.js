@@ -6636,7 +6636,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var url = "".concat("http://localhost:3000/api", "/movements");
 
 var insertTransfer = function insertTransfer(transfer) {
-  return _axios.default.post("".concat(url, "/").concat(transfer.id), transfer).then(function (response) {
+  return _axios.default.post(url, transfer).then(function (response) {
     return response.data;
   });
 };
@@ -6801,7 +6801,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "52861" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "62098" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
